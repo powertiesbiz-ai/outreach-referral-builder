@@ -1,0 +1,326 @@
+/* PowerTies gate — plain CSS, framework-agnostic (no Tailwind).
+   All classes are prefixed ptg-. Palette: black / white / grays + one
+   gold accent (#C6A15B). Safe to load alongside any app's own styles. */
+
+.ptg-screen {
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 48px 16px;
+  background: #f5f5f5;
+  color: #111111;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.ptg-card {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-top: 4px solid #c6a15b;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.ptg-loading {
+  text-align: center;
+}
+
+.ptg-eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #c6a15b;
+}
+
+.ptg-title {
+  margin: 0 0 12px;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #111111;
+}
+
+.ptg-lede {
+  margin: 0 0 12px;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #222222;
+}
+
+.ptg-body {
+  margin: 0 0 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444444;
+}
+
+.ptg-muted {
+  margin: 12px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #777777;
+}
+
+.ptg-signin-error {
+  margin: 12px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #b3222a;
+}
+
+.ptg-btn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px 18px;
+  border: 1px solid #111111;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #111111;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ptg-btn:hover {
+  background: #f0f0f0;
+}
+
+.ptg-btn-google {
+  width: 100%;
+  padding: 12px 18px;
+  background: #111111;
+  color: #ffffff;
+  text-align: center;
+}
+
+.ptg-btn-google:hover {
+  background: #333333;
+}
+
+.ptg-btn-primary {
+  background: #c6a15b;
+  border-color: #c6a15b;
+  color: #111111;
+}
+
+.ptg-btn-primary:hover {
+  background: #b08d46;
+}
+
+.ptg-btn-small {
+  padding: 4px 10px;
+  font-size: 13px;
+}
+
+/* Account bar */
+.ptg-account-bar {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 8px 16px;
+  background: #111111;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+
+.ptg-account-brand {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c6a15b;
+}
+
+.ptg-account-name {
+  color: #ffffff;
+}
+
+.ptg-account-plan {
+  padding: 2px 8px;
+  border: 1px solid #c6a15b;
+  border-radius: 999px;
+  color: #c6a15b;
+}
+
+.ptg-account-bar .ptg-btn {
+  margin-left: auto;
+  background: transparent;
+  border-color: #555555;
+  color: #ffffff;
+}
+
+.ptg-account-bar .ptg-btn:hover {
+  background: #222222;
+}
+
+/* Upgrade screen */
+.ptg-upgrade {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1080px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-top: 4px solid #c6a15b;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.ptg-section {
+  margin-top: 32px;
+}
+
+.ptg-section-title {
+  margin: 0 0 16px;
+  font-size: 20px;
+  color: #111111;
+}
+
+.ptg-access-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.ptg-access-group {
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 12px 16px;
+  background: #fafafa;
+}
+
+.ptg-access-group h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #111111;
+}
+
+.ptg-access-group ul,
+.ptg-access-list,
+.ptg-grant-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444444;
+}
+
+.ptg-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.ptg-price-note {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.ptg-tier-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.ptg-toggle {
+  display: inline-flex;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.ptg-toggle-btn {
+  padding: 8px 14px;
+  border: 0;
+  background: #ffffff;
+  color: #444444;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.ptg-toggle-btn-on {
+  background: #111111;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.ptg-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.ptg-tier-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 20px;
+  background: #ffffff;
+}
+
+.ptg-tier-card-required {
+  border: 2px solid #c6a15b;
+}
+
+.ptg-tier-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0;
+  font-size: 18px;
+  color: #111111;
+}
+
+.ptg-badge {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #c6a15b;
+  color: #111111;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.ptg-tier-price {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.ptg-access-heading {
+  margin: 8px 0 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.ptg-tier-card .ptg-btn {
+  margin-top: auto;
+  text-align: center;
+}
+
+.ptg-session-note {
+  border: 1px solid #e5e5e5;
+  border-left: 4px solid #c6a15b;
+  border-radius: 6px;
+  padding: 20px;
+  background: #fafafa;
+}

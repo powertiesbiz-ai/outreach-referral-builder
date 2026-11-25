@@ -1,0 +1,4 @@
+node_modules
+dist
+tests/.staging
+.env*.local
